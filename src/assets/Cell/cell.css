@@ -1,0 +1,14 @@
+.cell {
+  height: 60px;
+  width: 60px;
+  background-color: var(--bg-cell);
+  border: 1px solid grey;
+  font-size: 40px;
+  color: var(--text-primary);
+
+  &:focus {
+    background-color: var(--bg-cell-focus);
+    outline: 2px solid var(--border-cell-focus);
+    z-index: 1;
+  }
+}

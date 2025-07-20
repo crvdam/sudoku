@@ -1,0 +1,33 @@
+:root {
+  --bg-app: rgb(20, 20, 25);
+  --bg-cell: rgb(235, 235, 225);
+  --bg-cell-focus: rgb(205, 205, 195);
+  --border-cell: grey;
+  --border-cell-focus: grey;
+  --border-box: rgb(20, 20, 25);
+  --text-primary: black;
+  --text-secondary: grey;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  }
+}
+
+body {
+  background-color: var(--bg-app);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  text-align: center;
+  caret-color: transparent;
+  cursor: pointer;
+}
